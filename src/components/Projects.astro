@@ -36,6 +36,7 @@ const PROJECTS = [
     description:
       "Plataforma de reserva de citas médicas, manejo de historia clínica, control de stock de medicamentos y registro de pacientes y personal de la salud. Creado desde cero con JavaScript, Python, HTML/CSS y SQLite.",
     github: "https://github.com/lutriana/HCS-HealthCareSystem",
+    link: "https://www.figma.com/design/WpbTZKXqYAGkIc2SfkbOVk/HCS?node-id=0-1&t=HENz2pTKD6vdbgSa-1",
     image: "/projects/hcs.png",
     tags: [TAGS.PYTHON, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
@@ -44,6 +45,7 @@ const PROJECTS = [
     description:
       "Herramiento que registra, clasifica por prioridad y edita tareas, donde cada usuario tiene su cuenta personal y protegida. Creada desde cero con Python, Flask, HTML/CSS y SQLite.",
     github: "https://github.com/lutriana/TaskManager",
+    link: "",
     image: "/projects/tm.png",
     tags: [TAGS.PYTHON, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
@@ -52,6 +54,7 @@ const PROJECTS = [
     description:
       "Intenta adivinar el número sin perder en 3 intentos. ¡En este juego creado con JavaScript, ejercita tu memoria y diviértete! Desarrollado con HTML, CSS y JavaScript.",
     github: "https://github.com/lutriana/JSGame",
+    link: "",
     image: "/projects/JSGame.png",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
@@ -61,7 +64,7 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, link, tags, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -99,7 +102,7 @@ const PROJECTS = [
           {link && (
             <LinkButton href={link}>
               <Link class="size-4" />
-              Preview
+              Figma
             </LinkButton>
           )}
         </footer>
