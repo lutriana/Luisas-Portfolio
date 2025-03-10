@@ -1,40 +1,61 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
+import Python from "./icons/Python.astro"
+import Html from "./icons/Html.astro"
+import Css from "./icons/Css.astro"
+import Javascript from "./icons/Javascript.astro"
 import LinkButton from "./LinkButton.astro"
 
+
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
+  PYTHON: {
+    name: "Python",
+    class: "bg-[#80CEE1] text-white",
+    icon: Python,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
+  HTML: {
+    name: "HTML",
+    class: "bg-[#FFB15A] text-white",
+    icon: Html,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#CCA9DE] text-white",
+    icon: Css,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#CBD7BF] text-white",
+    icon: Javascript,
   },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "HCS - Sistema de Salud",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Plataforma de reserva de citas médicas, manejo de historia clínica, control de stock de medicamentos y registro de pacientes y personal de la salud. Creado desde cero con JavaScript, Python, HTML/CSS y SQLite.",
+    github: "https://github.com/lutriana/HCS-HealthCareSystem",
+    image: "/projects/hcs.png",
+    tags: [TAGS.PYTHON, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "TM - Administrador de Tareas",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Herramiento que registra, clasifica por prioridad y edita tareas, donde cada usuario tiene su cuenta personal y protegida. Creada desde cero con Python, Flask, HTML/CSS y SQLite.",
+    github: "https://github.com/lutriana/TaskManager",
+    image: "/projects/tm.png",
+    tags: [TAGS.PYTHON, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
+  {
+    title: "JS Game - Juego del número secreto",
+    description:
+      "Intenta adivinar el número sin perder en 3 intentos. ¡En este juego creado con JavaScript, ejercita tu memoria y diviértete! Desarrollado con HTML, CSS y JavaScript.",
+    github: "https://github.com/lutriana/JSGame",
+    image: "/projects/JSGame.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+  },
+
 ]
 ---
 
@@ -44,7 +65,7 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt="" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
